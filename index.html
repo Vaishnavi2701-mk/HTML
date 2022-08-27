@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="authur" content="Vaishnavi Mokadam">
+        <meta name="description" content="This page contain information about HTML">
+
+        <title>My first page</title>
+
+        <link rel="icon" href="image/favicon.ico">
+        <link rel="stylesheet" href="main.css" type="text/css">
+
+        <!-- this is a comment in html -->
+        <!--and this is a internal css using style command-->
+       <!-- <style>
+            html{
+                font-size: 22px;
+            }
+            body{
+                background-color: gray;
+                color: whitesmoke;
+            }
+        </style>-->
+    </head>
+    <body>
+        <header>
+          <h1>My Goals for this Year !</h1>
+          <hr>
+
+          <!-- if we have to use label by id of nav then it should be aria-labelledby otherwise as it is-->
+          <!-- <nav aria-labelledby="primary navigation">
+            <h2 id="primary navigation">primary navigation </h2> -->
+
+          <nav aria-label="Primary Navigation">
+               <ul>
+                   <li>
+                       <a href="#html">Learning HTML</a>
+                   </li>
+                   <li>
+                       <a href="#vacation">Planning a Vacation</a>
+                   </li>
+               </ul>
+          </nav>
+        </header>
+        <hr>
+    <main>
+
+        <p>This is my first web page.</p>
+        <h2>My Daily Schedule</h2>
+        <p>Let me tell you how
+            <ol type="A">
+            <li><br>&nbsp;&nbsp;&nbsp;...I learn more about web dev</li>
+            <li><br>&nbsp;&nbsp;&nbsp;...I plan out my Schedule</li>
+            <li><br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">
+                 <a href="https://developer.mozilla.org/en-US/">MDN</a>.</abbr></li>
+            </ol>
+        </p>
+        <hr>
+
+        <h3>I am Learing HTML</h3>
+
+        <!--Loading has 2 arrguments eager and lazy where eager is default where images load at once but lazy is something which will 
+        load when we get close to that image so that page can load faster-->
+
+        <figure>
+        <img src="image/732212.png" alt="HTML LOGO" title="This is HTML logo" width="200" height="200" loading="lazy">
+        <figcaption>This one is html logo</figcaption>
+        <br>
+        <code>&lt;h1&gt;Hello World !&lt;/h1&gt;</code>
+        </figure>
+
+        <hr>
+        <!-- Instead of section we can use article -->
+
+        <article id="html">
+            <h1>I am also Planning vacation</h1>
+            <p>I have been working hard and <em>really need a getaway.</em></p>
+            <p>I live in <strong>Mumbai so I want to visit a beach</strong></p>
+            <hr>
+            <h2>Places I want to visit</h2>
+            <p>
+                <ul type="square">
+                <address>
+                <li> Ratnagiri, Ganpatipudhe</li>
+                <figure>
+                    <img src="image/7.jpg" alt="Ganpatipudhe" title="This is ratnagiri Ganpatipudhe" width="400" height="300" loading="lazy">
+                    <figcaption>This is a temple of Lord Shree Ganesha Ganpatipudhe where a lot people visit each year</figcaption>
+                </figure>
+                <li>Pune, Dagdusheth halwai ganesha</li>
+                <li>Mumbai juhu beach</li>
+                <figure>
+                    <img src="image/806679-juhu-beach-dna.jpg" alt="Mumbai-Juhu-Beach" title="This is Juhu Beach of Mumbai" width="400" height="300" loading="lazy">
+                    <figcaption>This one Mumbai's Juhu Beach main attraction of tourism</figcaption>
+                </figure>
+                </address>
+                </ul>
+            </p>
+            <aside>
+                <details>
+                    <summary>
+                        Guess the <mark>number of hours</mark>  I code per day !
+                    </summary>
+                    <!-- PT: Pacific Timezone-->
+                    <p> I start at <time datetime="08.00"> 8.00 am </time> and writes code for <time datetime="PT3H"> 3 hours</time></p>
+                </details>
+            </aside>
+        </article>
+        <br>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:00">8 AM</time>-<time datetime="11:00">11 AM</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="11:00">11 AM</time>-<time datetime="12:00">12 AM</time>
+                    </td>
+                    <td>Eat Lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12 PM</time>-<time datetime="05:00">05 PM</time>
+                    </td>
+                    <td>Study for other Subjects</td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">Other Time</td>
+                    <td>Free Time</td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's what I do everyday , 6 days a week , just eat, sleep, code and recharge</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <article id="vacation">
+           <h2>Places I want to avoid</h2>
+           <p>
+             <dl>
+               <address>
+                  <dt><br> North Asia </dt>
+                  <dd>This place is too cold</dd>
+                  <dt><br> Hongkong Chaina</dt>
+                  <dd>This place is dangerous for health</dd>
+                  <dt><br> North Korea</dt>
+                  <dd>This place is dangerous for you</dd>
+               </address>
+             </dl>
+           </p>
+        </article>
+        <hr>
+    </main>
+
+    <footer>
+        &lt;&lt;&lt;&copy; <a href="about.html"> Vaishnavi Mokadam </a>&gt;&gt;&gt;
+        <p><a href="#">Back to the top </a></p>
+    </footer>
+    </body>
+</html>
+
+<!--
+<div></div>      Not meaning on its own [ Use with CSS ]
+<span></span>
+-->
