@@ -168,7 +168,80 @@
            </p>
         </article>
         <hr>
+        <article>
+            <h2>Contact Information</h2>
+            <p>I would really like to hear from you !</p>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend> Personal Info </legend>
+                    <label for="firstname">First Name: </label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Vaishnavi" autocomplete="on" required autofocus>
+                    <br>
+                    <label for="lastname">Last Name: </label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Mokadam" autocomplete="on" required autofocus>
+                    <br>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Your secret" autocomplete="on" required autofocus>
+                    <br>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required >
+                    <br>
+                    <label for="favouritedecade">Favourite Decade: </label>
+                    <input type="number" name="favouritedecade" id="favouritedecade" min="1940" max="2020" step="10" value="2010" >
+                    <br>
+                    <label for="coffee">Favourite Coffee: </label>
+                    <select name="coffee" id="coffee" multiple size="3">
+                        <optgroup label="Coffees">
+                          <option value="Regular Coffee">Regular Coffee</option>
+                          <option value="Iced Coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                          <option value="Latte" selected>Latte</option>
+                          <option value="Cappuccino">Cappuccino</option>
+                          <option value="Cafe Mocha">Cafe Mocha</option>
+                        </optgroup>
+                    </select>
+            </fieldset>
+
+                <!--
+                <label for="coffee">Favourite Coffee</label>
+                <input type="coffee" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                        <option value="Regular Coffee">Regular Coffee</option>
+                        <option value="Iced Coffee">Iced Coffee</option>
+                        <option value="Latte" selected>Latte</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Cafe Mocha">Cafe Mocha</option>
+                </datalist>
+
+            -->
+            <fieldset>
+                <legend>What is your favourite food?</legend>
+                <p><input type="radio" name="food" id="Pizza" value="Pizza">
+                   <label for="Pizza">Pizza</label>
+                </p>
+                <p><input type="radio" name="food" id="Tacco" value="Tacco">
+                    <label for="Tacco">Tacco</label>
+                </p>
+                <p><input type="radio" name="food" id="Chole-Bhature" value="Chole-Bhature">
+                    <label for="Chole-Bhature">Chole-Bhature</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="Your Message">Your Message</label>
+                <textarea name="Your Message" id="Your Message" cols="30" rows="10" placeholder="Type your message here !"></textarea>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post"> Post</button>
+            </form>
+        </article>
     </main>
+
+    <hr>
 
     <footer>
         &lt;&lt;&lt;&copy; <a href="about.html"> Vaishnavi Mokadam </a>&gt;&gt;&gt;
